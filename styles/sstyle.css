@@ -1,0 +1,410 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+
+/* commonstyles */
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    display: flex;
+    margin: 0px;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* -=--------------------
+    first-cointainer styles
+    ------------------- */
+.first-container {
+    background-color: #161616;
+    display: flex;
+    border-radius: 30px;
+    width: 1321px;
+    height: 646px;
+    margin-top: 50px;
+}
+
+.texts-box-a {
+    width: 531px;
+    height: 424px;
+    margin: 111px 25px 111px 106px;
+}
+
+.image-a {
+    width: 531px;
+    height: 613px;
+}
+
+.image-a img {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    color: white;
+    font-size: 70px;
+    margin: 0px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+h3 {
+    display: inline;
+    margin: 15px;
+    text-align: center;
+
+}
+
+#top-para {
+    color: white;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 46px;
+}
+
+.time {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.watch-live {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 16px 25px;
+    border-radius: 5px;
+}
+
+#space {
+    margin-left: 10px;
+}
+
+/* -=--------------------
+    first-cointainer styles close
+    ------------------- */
+
+/* ---------------------
+    mid container styles 
+    ----------------------*/
+.mid-container {
+    margin-top: 130px;
+    display: flex;
+}
+
+.button-box {
+    background-color: #161616;
+    border-radius: 10px;
+    width: 312px;
+    height: 312px;
+    margin-right: 13px;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: center;
+    grid-row-gap: 20px;
+}
+
+#button {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+    padding: 35px 60px 22px 60px;
+}
+
+.button {
+    text-decoration: none;
+    color: #161616;
+    background-color: white;
+    border-radius: 10px;
+    padding: 35px 60px 22px 60px;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap: 20px;
+    grid-column-gap: 15px;
+}
+
+.blog {
+    width: 312px;
+    height: 282px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+    display: inline;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog-header {
+    margin: 10px 215px 0px 10px;
+    padding: 5px 20px 5px 20px;
+    border: 1px solid gray;
+}
+
+.blog-para {
+    margin: 10px;
+}
+
+/* ---------------
+     footer
+    ------------- */
+
+footer {
+    color: white;
+    background-color: #161616;
+    width: 100%;
+    height: 600px;
+    margin-top: 130px;
+}
+
+.footer-text {
+    font-size: 40px;
+    margin-top: 80px;
+}
+
+hr {
+    color: white;
+    margin: 50px 200px 50px 200px;
+    border: 1px solid gray;
+}
+
+.footer-text-a {
+    display: grid;
+    width: 150px;
+
+}
+
+.footer-item {
+    color: #B9B9B9;
+    margin: 10px;
+}
+
+.link {
+    letter-spacing: 40px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+/* ----------------------
+     @media queries
+--------------------- */
+
+/* Mobile devices */
+
+@media only screen and (max-width:688px) {
+    .first-container {
+        width: 100%;
+        height: 850px;
+        display: grid;
+        grid-template-columns: 1, 1fr;
+    }
+
+    .texts-box-a {
+        text-align: center;
+        width: 100%;
+        height: 40%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    h1 {
+        font-size: 40px;
+        margin: 40px;
+    }
+
+    #top-para {
+        margin: 40px;
+        text-emphasis: 10px;
+    }
+
+    .watch-live {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+        padding: 16px 25px;
+        border-radius: 5px;
+    }
+
+    .image-a {
+        width: 80%;
+        height: 100%;
+        margin-left: 40px;
+    }
+
+    /* -----------------------------
+        mid container start
+    --------------------------- */
+
+    .mid-container {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .button-box {
+        background-color: white;
+        width: 100%;
+        margin-left: -13px;
+    }
+
+    .button {
+        border: 1px solid gray;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+
+    .blog {
+        width: 100%;
+    }
+
+    /* ------------------
+         footer start\
+    -------------------- */
+
+    footer {
+        color: white;
+        background-color: #161616;
+        width: 100%;
+        height: 700px;
+        margin-top: 130px;
+    }
+
+    .footer-text {
+        font-size: 40px;
+    }
+
+    hr {
+        color: white;
+        margin: 40px 30%;
+        border: 1px solid gray;
+    }
+
+    .footer-items-a {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer-item {
+        flex-direction: grid;
+        color: #B9B9B9;
+    }
+
+    .footer-items-b {
+        margin: 0px;
+    }
+
+    .link {
+        letter-spacing: 40px;
+        margin-top: 50px;
+        font-size: 50px;
+    }
+}
+
+/* ----------------
+   tablet view
+----------------- */
+@media only screen and (min-width:688px) and (max-width:992px) {
+
+
+    .first-container {
+        background-color: #161616;
+        display: flex;
+        border-radius: 30px;
+        width: 100%;
+        height: 546px;
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+
+    .texts-box-a {
+        width: 531px;
+        height: 50%;
+        margin: 111px 25px 111px 106px;
+    }
+
+    .image-a {
+        width: 531px;
+        height: 547px;
+    }
+
+    .image-a img {
+        width: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        color: white;
+        font-size: 50px;
+        margin: 0px;
+    }
+
+    /*------------------------------
+     mid container start 
+----------------------------*/
+
+    .mid-container {
+        width: 100%;
+        height: 1000px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .button-box {
+        background-color: white;
+        border-radius: 10px;
+        width: 60px;
+        padding: 15px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    #button {
+        text-decoration: none;
+        color: white;
+        background-color: red;
+
+        width: 120px;
+        height: 20px;
+        border-radius: 10px;
+        padding: 20px 50px 20px 50px;
+        margin: 0px 20px 0px 10px;
+    }
+
+    .button {
+        text-decoration: none;
+        color: #161616;
+        background-color: white;
+        width: 120px;
+        height: 20px;
+        border: 1px solid gray;
+        border-radius: 10px;
+        padding: 20px 50px 20px 50px;
+        margin: 0px 20px 0px 20px;
+    }
+
+    .blogs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 30px;
+    }
+
+    .blog {
+        width: 312px;
+        height: 242px;
+        border: 1px solid gainsboro;
+        border-radius: 10px;
+        display: inline;
+        flex-direction: column;
+        align-items: center;
+    }
+}
