@@ -1,9 +1,0 @@
-.div-a {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.dcv {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
